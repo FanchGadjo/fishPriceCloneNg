@@ -11,5 +11,11 @@ export class MarketsComponent implements OnInit {
 
   markets = MARKETS;
 
+  selectedMarket;
+  onSelect(market: any): void {
+    this.selectedMarket = market;
+    console.log(market.name);
+  }
+
   ngOnInit() {}
 }

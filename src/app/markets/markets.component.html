@@ -1,6 +1,9 @@
 <h2 class="text-xl font-bold mb-3">Markets</h2>
 <ul>
-  <li *ngFor="let market of markets">
+  <li *ngFor="let market of markets" (click)="onSelect(market)">
     <div class="text-lg border-b border-gray-500 bg-white mb-2 hover:bg-gray-200">{{ market.name }}</div>
+    <div *ngIf="market == selectedMarket">
+      <div class="text-lg">{{ selectedMarket.code }}</div>
+    </div>
   </li>
 </ul>
