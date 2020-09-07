@@ -1,9 +1,27 @@
 <h2 class="text-xl font-bold mb-3">Markets</h2>
-<ul>
+<ul class="text-lg">
   <li *ngFor="let market of markets" (click)="onSelect(market)">
-    <div class="text-lg border-b border-gray-500 bg-white mb-2 hover:bg-gray-200">{{ market.name }}</div>
+    <div class="border-b border-gray-500 bg-white mb-2 hover:bg-gray-200">{{ market.name }}</div>
     <div *ngIf="market == selectedMarket">
-      <div class="text-lg">{{ selectedMarket.code }}</div>
+      <div class="mb-4">
+        <div class="flex align-middle">
+          <span class="material-icons inline-block text-gray-500 mr-4">
+            code
+          </span>
+          <span class="inline-block">{{ selectedMarket.code }}</span>
+        </div>
+        <div class="flex align-middle">
+          <span class="material-icons inline-block text-gray-500 mr-4">
+            place
+          </span>
+          <div class="inline-block">
+            <span class="block">{{ selectedMarket.address.line1 }}</span>
+            <span class="block">{{ selectedMarket.address.line2 }}</span>
+            <span class="block">{{ selectedMarket.address.line3 }}</span>
+            <span class="block">{{ selectedMarket.address.postalCode }} {{ selectedMarket.address.locality }}</span>
+          </div>
+        </div>
+      </div>
     </div>
   </li>
 </ul>
