@@ -1,12 +1,16 @@
-# Angular Tailwind Starter
+# Fish Price Clone
+
+This is a demo repo trying to replicate [Fish Price](https://fish-price.com/), made by [Sinay](https://www.sinay.fr/). This is intended as a training for using Angular, Tailwind and Storybook.
+
+Based off of : [Angular Tailwind Starter](https://github.com/wbroberts/angular-tailwind-starter), by [William Roberts](https://github.com/wbroberts)
 
 This is a starter repo for Angular projects that wish to use Tailwindcss with Purgecss. This reduces the amount of boilerplate and Googling to get everything working together.
 
 ## Getting Started
 
 ```
-git clone https://github.com/wbroberts/angular-tailwind-starter.git
-cd angular-tailwind-starter
+git clone https://github.com/FanchGadjo/fishPriceCloneNg.git
+cd fishPriceCloneNg
 npm install
 npm start
 ```
