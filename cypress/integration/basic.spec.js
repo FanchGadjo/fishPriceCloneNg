@@ -5,6 +5,7 @@ describe('my first e2e test', () => {
     cy.viewport('samsung-s10');
     cy.visit('/');
     cy.contains('Markets');
+    cy.percySnapshot();
   });
   it('should iteract with market list', () => {
     cy.viewport('samsung-s10');
@@ -14,5 +15,6 @@ describe('my first e2e test', () => {
     cy.contains('34304');
     cy.contains('Arcachon').click();
     cy.contains('Cherbourg').click();
+    cy.percySnapshot();
   });
 });
